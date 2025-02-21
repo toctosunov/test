@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 0, 1) 100%);
+    width: 100%;
+}
+
+.conteiner {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #8f2323;
+    border-radius: 10px;
+    position: relative;
+    top: 5px;
+    left: -15px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: solid #8f2323;
+}
+
+header nav ul li.btn a {
+    background: #b72929;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: 500ms ease;
+}
+
+header nav ul li.btn a:hover {
+    background: #5b1515;
+}
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero--info {
+    width: 530px;
+    padding-top: 70px;
+}
+
+.hero--info h2 {
+    color: #ff9204;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 500ms ease;
+}
+
+.hero--info h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero--info p {
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px 0;
+    transition: all 500ms ease;
+}
+
+.hero--info p:hover {
+    transform: scale(1.1);
+    color: #5b1515;
+    margin-left: 30px;
+}
+
+.hero--info .btn, .email .block button {
+    background: #FA8305;
+    color: #fff;
+    border-radius: 30px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+    font-size: 17px;
+}
+
+.hero--info .btn:hover, .email .block button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero img {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 45%;
+    height: 50%;
+    transition: all 500ms ease;
+}
+
+
+/* Секция с играми */
+.trending {
+    padding-top: 50px;
+}
+
+.trending h3 {
+    font-weight: 600;
+    font-size: 31px;
+}
+
+.trending .see-all, .projects .see-all {
+    color: #fff;
+    background: #25211D;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: right;
+    display: block;
+    transition: all 500ms ease;
+}
+
+.trending .see-all:hover, .projects .see-all:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+}
+
+.trending .games {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 10px;
+}
+
+.trending .games .block {
+    margin-left: 20px;
+    border-radius: 30px;
+    transition: all 500ms ease;
+}
+
+.trending .games .block:hover {
+    transform: scale(1.1);
+}
+
+.trending .games .block img {
+    border-radius: 30px;
+}
+
+.trending .games span {
+    display: block;
+    text-align: center;
+}
+
+.trending .games span img {
+    position: relative;
+    top: 5px;
+}
+
+.big-text {
+    padding: 50px 0;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    width: 800px;
+}
+
+.banner {
+    padding: 80px 0;
+}
+
+.banner h3 {
+    font-weight: 600;
+    font-size: 31px;
+    margin-bottom: 30px;
+}
+
+.banner p {
+    line-height: 170%;
+    margin-bottom: 30px;
+    width: 550px;
+}
+
+.banner img {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    transition: all 10s ease;
+}
+
+.banner img:hover {
+    transform: scale(1.04);
+}
+
+/*секция с изображениями */
+
+.features {
+    background: url('/img/bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 80px 0;
+}
+.features h3, 
+.features p {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features h3 {
+    font-size: 30px;
+}
+
+.features .info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .info .block {
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+}
+
+.features .info .block img {
+    width: 50px;
+}
+
+.projects {
+    padding: 100px;
+}
+
+.projects h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.projects p {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.projects .images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.projects .images img {
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    margin: 0 10px;
+    transition: all 500ms ease;
+}
+
+.projects .images img:hover {
+    width: 50%;
+    height: 50%;
+}
+
+.projects .see-all {
+    float: none;
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Нижняя часть */
+
+.email {
+    padding-bottom: 100px;
+}
+
+.email h3 {
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.email .block {
+    background: #1c140f;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.email .block h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.email .block p {
+    width: 500px;
+}
+
+.email .block input {
+    box-sizing: border-box;
+    background: white;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 440px;
+    height: 60px;
+    font-family: 'Popins', sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+    padding-right: 140px;
+    padding-left: 10px;
+}
+
+.email .block input:active::placeholder {
+    transform: scale(1.01);
+    color: rgb(148, 25, 25);
+}
+
+.email .block button:hover {
+    cursor: pointer;
+    border: 0;
+}
+
+.email .block button {
+    position: relative;
+    top: -53px;
+    right: -304px;
+}
